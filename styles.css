@@ -2,13 +2,55 @@
     width:100%;
     background-color:#2e3192;
     height: 75px;
+    display: inline-flex;
 }
 .logo img{
- max-height: 70px;
- padding-top: 4px;
+ max-height: 65px;
+margin-top: 4px;
+border-radius:2px;
 }
 .logo{
     display:flex;
-    justify-content: right;
-    text-align: right;
+    justify-content: center;
+    text-align: center;
 }
+
+
+.sb {
+    padding: 0px 10px 0 20px;
+    margin-top: 10px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 100;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      height: 40px;
+      border-radius: 50px 0  0 50px !important;
+  }
+  .sb :focus {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          border-color: transparent;
+  
+      }
+  .sb::placeholder {
+    font-size: 15px;
+  }   
+  
+  #searchbtn
+  { border:0;
+    padding: 0px 10px;
+    margin-top: 10px;
+    color:black;
+    background:#fff;
+    font-size: 20px;
+    font-weight: 500;
+      height:40px;
+  border-radius: 0 50px 50px 0 !important;
+  }
+  .search{
+    display: inline-flex;
+    margin-top: 7px;
+    justify-content: center;
+    text-align: center;
+  }
