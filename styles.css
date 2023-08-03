@@ -1,0 +1,14 @@
+.header{
+    width:100%;
+    background-color:#2e3192;
+    height: 75px;
+}
+.logo img{
+ max-height: 70px;
+ padding-top: 4px;
+}
+.logo{
+    display:flex;
+    justify-content: right;
+    text-align: right;
+}
