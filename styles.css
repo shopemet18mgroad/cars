@@ -442,3 +442,68 @@ border-radius:2px;
 .imghldr{
   max-height: 400px;
 }
+.previewbid{
+  max-height:560px;
+  background-color: #f8f9fa;
+  max-width:500px;
+  border-radius: 10px;
+}
+
+span {cursor:pointer; }
+		.number{
+			
+		}
+		.minus, .plus{
+			width:50px;
+			height:45px;
+			background:#f2f2f2;
+			border-radius:10px;
+			padding:8px 5px 8px 5px;
+			border:1px solid #ddd;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+		}
+		.inp{
+			height:50px;
+      max-width: 200px;
+      text-align: center;
+      font-size: 26px;
+			border:1px solid #ddd;
+			border-radius:7px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .cbprice > p{
+     line-height: 10px;
+    }
+    .cbprice > h5{
+      line-height: 10px;
+     }
+.liveauctmhldr{
+  border:2px solid #2aa2f8;
+    display: flex;
+    overflow: hidden;
+    /* position: relative; */
+    /* max-height: 100px; */
+    min-height: 80px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.livauc{color: #ffffff;
+display: flex;
+padding: 1px 10px;
+max-height: 38px;
+min-height: 38px;
+align-items: center;
+background-color: #2aa2f8;
+}
+.tmr{
+  height: 40px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-height: 60px;
+    min-height: 30px;
+    flex-direction: column;
+}
