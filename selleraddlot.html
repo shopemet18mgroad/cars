@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" >
+    <title>Car Auctioning | Aucjunction</title>
+  </head>
+  <body>
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="col-md-3 col-sm-12 col-xs-12 logo">
+            <a href="#" title="Aucjunction Logo">
+                <img class="img-fluid" alt="Aucjunction" src="https://www.aucjunction.com/web_files/images/aucjuntn.jpg">
+            </a>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 search">
+           
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12 btnhldr">
+            <div class="btn2">
+              <button type="button" class="btn btn-link text-white">Hi Nishanth S</button>
+            </div>
+            <div class="btn1">
+              <button type="button" class="btn btn-warning">Register Now</button>
+            </div>
+        </div> 
+    </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row theader">
+      
+</div>
+</div> 
+  
+<div class="container-fluid">
+  <div class="row theader_abt">
+    <div class="col-md-12 col-sm-12 typehead">
+      <h3>Add Lot</h3>
+    </div>
+    
+</div>
+</div>
+<div class="container-fluid">
+  <div class="row theader2_abacb">
+    <div class="container cbox mb-2">
+        <div class="row">
+          </div>
+          <table>
+          <tbody>
+            <form name="myForm" action="<?php echo base_url();?>seller_addlot_info" method="POST" enctype="multipart/form-data">
+              <input type="hidden" class="form-control w-100" id="sauctionid" name="sauctionid" value="" readonly>
+              <input class="form-control w-100"  type="hidden" id="sname" name="sname" placeholder="Search" value="" aria-label="Search" readonly>
+              <!--scategoery-->
+              <input class="form-control w-100" type="hidden" id="sdescription" name="sdescription">
+              <input class="form-control w-100" type="hidden" id="sunitmeasurment" name="sunitmeasurment" value="NOS">
+              <input class="form-control w-100" type="hidden" id="sqty" name="sqty" value="1">
+              <input class="form-control w-100" type="hidden" id="sbidbase" name="sbidbase" value="NOS">
+              <input class="form-control w-100" type="hidden" id="sgst" name="sgst" value="0%" placeholder="">
+              <input class="form-control w-100" type="hidden" id="shsncode" name="shsncode" value="NA"> 
+              <input class="form-control w-100" type="hidden" id="sothertax" name="sothertax" value="0">
+              <input class="form-control w-100" type="hidden" id="semdamount" name="semdamount">
+              <input class="form-control w-100" type="hidden" id="sminincre" name="sminincre" value="100">
+              <input class="form-control w-100" type="hidden" id="sliftingperiod2" name="sliftingperiod2">
+              <input class="form-control w-100 mt-2" type="hidden" id="sliftingperiod" name="sliftingperiod" placeholder="">
+              <input type="hidden" class="form-check-input" id="spcbcertificate" name="spcbcertificate" value="0">
+              
+              <!--<tr>
+                <td>Lot No.</td>
+                <td style="color:blue;"><input class="form-control w-50"  type="text" id="slotno" name="slotno" aria-label="Search" readonly></td>
+              </tr>-->
+                
+              <tr>
+                <td>Brand Name</td>
+                <td width="4%"><select class="form-control w-100" id="slotname" name="slotname">
+                  <option value="Select" selected>Maruthi</option>
+                  <option value="Ferrous">Hyundai</option>
+                  <option value="Non Ferrous">Tata</option>
+                  <option value="Minor Metals" >Mercedes</option>
+                  <option value="Plain paper">BMW</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Model</td>
+                <td><input class="form-control w-100" type="text" id="slotmodelname" name="slotmodelname" onclick=""></td>
+              </tr>
+              <tr>
+                <td>Date of Manufacture</td>
+                <td><input class="form-control w-100" type="date" id="slotmodelname" name="slotmodelname" onclick=""></td>
+              </tr>
+              <tr>
+                <td>KMS Driven </td>
+                <td><input class="form-control w-100" type="date" id="slotkmsdriven" name="slotkmsdriven" onclick=""></td>
+              </tr>
+              <tr>
+                <td>AC Condition</td>
+                <td width="4%"><select class="form-control w-100" id="slotaccond" name="slotaccond">
+                  <option value="Select" selected>Working</option>
+                  <option value="Ferrous">Minor Issues</option>
+                  <option value="Non Ferrous">Not Working</option>
+                  <option value="Minor Metals" >Gas Filling Required</option>
+                  <option value="Plain paper">NA</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Smoke Color</td>
+                <td width="4%"><select class="form-control w-100" id="slotsmokecolor" name="slotsmokecolor">
+                  <option value="Select" selected>No Smoke</option>
+                  <option value="Ferrous">Blue Smoke</option>
+                  <option value="Non Ferrous">Grey Smoke</option>
+                  <option value="Minor Metals" >White SMOKE</option>
+                  <option value="Plain paper">NA</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Tyre Condition</td>
+                <td width="4%"><select class="form-control w-100" id="slottyrecond" name="slottyrecond">
+                  <option value="Select" selected>Excellent</option>
+                  <option value="Ferrous">Good</option>
+                  <option value="Non Ferrous">Average</option>
+                  <option value="Minor Metals" >Bad</option>
+                  <option value="Plain paper">NA</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Oil Leakage</td>
+                <td width="4%"><select class="form-control w-100" id="slottyrecond" name="slottyrecond">
+                  <option value="Select" selected>Engine </option>
+                  <option value="Ferrous">Gear Box</option>
+                  <option value="Non Ferrous">Engine and Gearboc</option>
+                  <option value="Minor Metals" >No Leakage</option>
+                  <option value="Plain paper">NA</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>  												
+              <td>Location Of Vehicle</td>
+              <td><input class="form-control w-100" type="text" id="slotlocation" name="slotlocation"></td>
+              </tr>
+              <tr>
+                <td>Expected Price</td>
+                <td><input class="form-control w-100" type="text" id="sprice" name="sprice"></td>
+              </tr>
+              <tr>
+                <td>Starting Bid Price</td>
+                <td><input class="form-control w-100" type="text" id="sstartbidprice" name="sstartbidprice"></td>
+              </tr>
+              <tr>
+                <td>Brief Description</td>
+                <td><textarea class="form-control w-100" type="text" id="sstartbidprice" name="sstartbidprice"></textarea></td>
+              </tr>
+              <tr>
+                <td>Front View</td>
+               <td><div class="input_fields_wrap m-3" >
+               
+               <input type="file" id="uploadproductimage" name="uploadproductimage[]" multiple>
+               </div></td>
+               </tr>
+            
+              </tbody>
+            </table> 
+        </div>
+    </div>
+</div>
+</div>
+
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+    
+    <div class="text-center p-4" style="background-color: #8CABFF;color:white">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="#">Aucjunction.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

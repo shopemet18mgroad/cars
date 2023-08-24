@@ -177,7 +177,7 @@ border-radius:2px;
 }
 .theader2abcd{
   min-height:200px;
-  max-height: 900px;
+  max-height: 2000px;
   background-color: #fff !important;
   flex-wrap: wrap;
   justify-content: center;
@@ -520,7 +520,7 @@ background-color: #2aa2f8;
 }
 .cbox{
   background-color: #fff;
-  max-height: 1100px;
+  max-height:13000px;
   border-radius: 10px;
 }
 .contactus{
@@ -531,8 +531,12 @@ background-color: #2aa2f8;
   line-height: 10px;
 }
 .theader2_abacb{
-  max-height: 1100px;
+  max-height:13000px;
   background-color: #ddd!important;
   justify-content: center;
   padding-top: 20px;
+}
+.vhfl{
+  min-height: 923px;
+  max-height: 1200px;
 }

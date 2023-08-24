@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" >
+    <title>Car Auctioning | Aucjunction</title>
+  </head>
+  <body>
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="col-md-3 col-sm-12 col-xs-12 logo">
+            <a href="#" title="Aucjunction Logo">
+                <img class="img-fluid" alt="Aucjunction" src="https://www.aucjunction.com/web_files/images/aucjuntn.jpg">
+            </a>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 search">
+           
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12 btnhldr">
+            <div class="btn2">
+              <button type="button" class="btn btn-link text-white">Hi Nishanth S</button>
+            </div>
+            <div class="btn1">
+              <button type="button" class="btn btn-warning">Register Now</button>
+            </div>
+        </div> 
+    </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row theader">
+      
+</div>
+</div> 
+  
+<div class="container-fluid">
+  <div class="row theader_abt">
+    <div class="col-md-12 col-sm-12 typehead">
+      <h3>Add Lot</h3>
+    </div>
+    
+</div>
+</div>
+<div class="container-fluid">
+  <div class="row theader2_abacb">
+    <div class="container cbox mb-2">
+        <div class="row">
+          </div>
+          <table>
+          <tbody>
+            <form name="myForm" action="<?php echo base_url();?>seller_addlot_info" method="POST" enctype="multipart/form-data">
+            <tr>
+                <td>Auction Id</td>
+                <td style="text-color:blue;"> <input type="text" class="form-control w-100" id="sauctionid" name="sauctionid" value="<?php echo $auctionid; ?>" readonly></td>
+              </tr>
+              <tr>
+                <td>Seller</td>
+                <td><input class="form-control w-100"  type="text" id="sname" name="sname" placeholder="Search" value="<?php echo $sname; ?>" aria-label="Search" readonly>
+              </td>
+              </tr>
+              
+              <!--<tr>
+                <td>Lot No.</td>
+                <td style="color:blue;"><input class="form-control w-50"  type="text" id="slotno" name="slotno" aria-label="Search" readonly></td>
+              </tr>-->
+                
+              <tr>
+               
+                <td>Lot Name</td>
+                <td><input class="form-control w-100" type="text" id="slotname" name="slotname" onclick="auction_id1()"></td>
+              </tr>
+              <tr>
+                <td width="11%">Category</td>
+                <td width="4%"><select class="form-control w-100" id="scategory" name="scategory">
+                  <option value="Select" selected>Select</option>
+                  <option value="Ferrous">Ferrous</option>
+                  <option value="Non Ferrous">Non Ferrous</option>
+                  <option value="Minor Metals" >Minor Metals</option>
+                  <option value="Plain paper">Plain paper</option>
+                  <option value="Granules">Granules</option>
+                  <option value="General">General</option>
+                  <option value="PCB">PCB</option>
+                  <option value="Dismantling">Dismantling</option>
+                  <option value="E Waste">E Waste</option>
+                  <option value="Machineries">Machineries</option>
+                  <option value="Properties">Properties</option>
+                  <option value="Miscellaneous">Miscellaneous</option>
+                  <option value="Timbers">Timbers</option>
+                  <option value="Transformers">Transformers</option>
+                  <option value="Hazardous">Hazardous</option>
+                  <option value="Plastic">Plastic</option>
+                  <option value="Oil">Oil</option>
+                  <option value="Coolant">Coolant</option>
+                  <option value="All Construction Materials">All Construction Materials</option>
+                  </select>
+                </td>
+              </tr>
+               <tr>
+                <td>Description</td>
+                <td><textarea class="form-control w-100" type="text" id="sdescription" name="sdescription"></textarea></td>
+              </tr>
+              <tr>  												
+              <td>Location Of Lot</td>
+              <td><input class="form-control w-100" type="text" id="slotlocation" name="slotlocation"></td>
+            </tr>
+            
+            
+            <tr>
+              <td>Unit Of Measurement</td>
+              <td><select class="form-control w-100" onchange="change();" id="sunitmeasurment" name="sunitmeasurment">
+                  <option value="KG" selected>KG</option>
+                  <option value="Metric Ton">Metric Ton</option>
+                  <option value="Lot">Lot</option>
+                  <option value="Liter">Liter</option>
+                  <option value="NOS">NOS</option>
+                  <option value="Meter">Meter</option>
+                  </select></td>
+            </tr>
+            <tr>
+              <td>Qty</td>
+              <td><input class="form-control w-100" type="text" id="sqty" name="sqty"></td>
+            </tr>
+            <tr>
+              <td>Bid Base</td>
+              <td><select class="form-control w-10" id="sbidbase" name="sbidbase">
+                  <option value="KG" selected>KG</option>
+                  <option value="Metric Ton">Metric Ton</option>
+                  <option value="Lot">Lot</option>
+                  <option value="Liter">Liter</option>
+                  <option value="NOS">NOS</option>
+                  <option value="Meter">Meter</option>
+                  </select></td>
+            </tr>
+            <tr>
+            <td>GST</td>
+            <td><input class="form-control w-100" type="text" id="sgst" name="sgst" placeholder="Exp. Max 28%"></td>
+              </tr>
+            <tr>
+              <td>HSN Code.</td>
+              <td><input class="form-control w-100" type="text" id="shsncode" name="shsncode"></td>
+              </tr>
+            
+               <tr>
+              <td>Other Tax</td>
+              <td><input class="form-control w-100" type="text" id="sothertax" name="sothertax"></td>
+              </tr>
+            <tr>
+              <td>EMD Amount</td>
+              <td><input class="form-control w-100" type="text" id="semdamount" name="semdamount"></td>
+              </tr>
+            <tr>
+          
+              <td>Minimum Increament</td>
+              <td><input class="form-control w-100" type="text" id="sminincre" name="sminincre"></td>
+            </tr>	
+            
+            <tr>
+          
+              <td>Expected Price</td>
+              <td><input class="form-control w-100" type="text" id="sprice" name="sprice"></td>
+            </tr>
+            <tr>
+              <td>Starting Bid Price</td>
+              <td><input class="form-control w-100" type="text" id="sstartbidprice" name="sstartbidprice"></td>
+            </tr>
+            
+            <tr>
+              <td>Lifting Period</td>
+              <td><input class="form-control w-100" type="datetime-local" id="sliftingperiod2" name="sliftingperiod2">
+              <input class="form-control w-100 mt-2" type="text" id="sliftingperiod" name="sliftingperiod" placeholder="Exp.15 days"></td>
+              </tr>
+            <tr>
+              <td>PCB Certificate</td>
+              <td><div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="spcbcertificate1[]" name="spcbcertificate" value="1">
+                <label class="form-check-label" for="exampleCheck1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="spcbcertificate2[]" name="spcbcertificate" value="0">
+                <label class="form-check-label" for="exampleCheck1">No</label>
+                </div></td>
+              </tr>
+            
+              </tbody>
+            </table> 
+        </div>
+    </div>
+</div>
+</div>
+
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+    
+    <div class="text-center p-4" style="background-color: #8CABFF;color:white">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="#">Aucjunction.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
