@@ -50,14 +50,14 @@
     <div class="container cbox mb-2">
         <div class="row">
           <div class="col-md-12">
-            <table>
+            <table class="table table-striped">
               <tbody>
 	  
                 <tr>
                 <form action="<?php echo base_url();?>Seller_startauction" method="POST" id="upload-form" enctype="multipart/form-data">
                   
-                  <td>Category</td>
-                  <td><select class="form-control w-100" id="scategory" name="scategory">
+                  <td width="50%">Category</td>
+                  <td width="50%"><select class="form-control w-100" id="scategory" name="scategory">
                     <option value="PCARS" selected>Private Cars</option>
                     <option value="CCARS">Commerical Cars</option>
                     <option value="TLV">Total Loss Vehicle</option>
@@ -95,20 +95,20 @@
                 </tr>
              
                 <tr>
-                  <td>Auction Id</td>
-                  <td><input class="form-control w-100"  type="text" id="sauctionid" name="sauctionid" placeholder="Auction ID" aria-label="Search" readonly></td>
+                  <td width="50%">Auction Id</td>
+                  <td width="50%"><input class="form-control w-100"  type="text" id="sauctionid" name="sauctionid" placeholder="Auction ID" aria-label="Search" readonly></td>
                 </tr>
                 
                 <tr>
-                <td>Online Auction Start And End Date</td>
-                <td><input class="form-control w-100" id="saucstartdate_time" name="saucstartdate_time" type="datetime-local" ><br>
+                <td width="50%">Online Auction Start And End Date</td>
+                <td width="50%"><input class="form-control w-100" id="saucstartdate_time" name="saucstartdate_time" type="datetime-local" ><br>
                 <input class="form-control w-100 mb-3" id="saucclosedate_time" name="saucclosedate_time" type="datetime-local" >
                 </td>
               </tr>
               
               <tr>
-              <td>Aucjunction Terms & Conditions</td>
-              <td>
+              <td width="50%">Aucjunction Terms & Conditions</td>
+              <td width="50%">
               <button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#myModal">
                 Terms & Conditions
               </button>
@@ -257,7 +257,7 @@
                   </div></td>
               </tr>
               <tr>
-                <td>Brand Name</td>
+                <td width="50%">Brand Name</td>
                 <td width="4%"><select class="form-control w-100" id="slotname" name="slotname">
                   <option value="Select" selected>Maruthi</option>
                   <option value="Ferrous">Hyundai</option>
@@ -268,19 +268,19 @@
                 </td>
               </tr>
               <tr>
-                <td>Model</td>
-                <td><input class="form-control w-100" type="text" id="slotmodelname" name="slotmodelname" onclick=""></td>
+                <td width="50%">Model</td>
+                <td width="50%"><input class="form-control w-100" type="text" id="slotmodelname" name="slotmodelname" onclick=""></td>
               </tr>
               <tr>
-                <td>Date of Manufacture</td>
-                <td><input class="form-control w-100" type="date" id="slotmodelname" name="slotmodelname" onclick=""></td>
+                <td width="50%">Date of Manufacture</td>
+                <td width="50%"><input class="form-control w-100" type="date" id="slotmodelname" name="slotmodelname" onclick=""></td>
               </tr>
               <tr>
-                <td>KMS Driven </td>
-                <td><input class="form-control w-100" type="date" id="slotkmsdriven" name="slotkmsdriven" onclick=""></td>
+                <td width="50%">KMS Driven </td>
+                <td width="50%"><input class="form-control w-100" type="number" id="slotkmsdriven" name="slotkmsdriven" onclick=""></td>
               </tr>
               <tr>
-                <td>AC Condition</td>
+                <td width="50%">AC Condition</td>
                 <td width="4%"><select class="form-control w-100" id="slotaccond" name="slotaccond">
                   <option value="Select" selected>Working</option>
                   <option value="Ferrous">Minor Issues</option>
@@ -291,7 +291,7 @@
                 </td>
               </tr>
               <tr>
-                <td>Smoke Color</td>
+                <td width="50%">Smoke Color</td>
                 <td width="4%"><select class="form-control w-100" id="slotsmokecolor" name="slotsmokecolor">
                   <option value="Select" selected>No Smoke</option>
                   <option value="Ferrous">Blue Smoke</option>
@@ -302,7 +302,7 @@
                 </td>
               </tr>
               <tr>
-                <td>Tyre Condition</td>
+                <td width="50%">Tyre Condition</td>
                 <td width="4%"><select class="form-control w-100" id="slottyrecond" name="slottyrecond">
                   <option value="Select" selected>Excellent</option>
                   <option value="Ferrous">Good</option>
@@ -313,103 +313,121 @@
                 </td>
               </tr>
               <tr>
-                <td>Oil Leakage</td>
+                <td width="50%">Oil Leakage</td>
                 <td width="4%"><select class="form-control w-100" id="slottyrecond" name="slottyrecond">
                   <option value="Select" selected>Engine </option>
                   <option value="Ferrous">Gear Box</option>
-                  <option value="Non Ferrous">Engine and Gearboc</option>
+                  <option value="Non Ferrous">Engine and Gearbox</option>
                   <option value="Minor Metals" >No Leakage</option>
                   <option value="Plain paper">NA</option>
                   </select>
                 </td>
               </tr>
               <tr>  												
-              <td>Location Of Vehicle</td>
-              <td><input class="form-control w-100" type="text" id="slotlocation" name="slotlocation"></td>
+              <td width="50%">Location Of Vehicle</td>
+              <td width="50%"><input class="form-control w-100" type="text" id="slotlocation" name="slotlocation"></td>
               </tr>
               <tr>
-                <td>Expected Price</td>
-                <td><input class="form-control w-100" type="text" id="sprice" name="sprice"></td>
+                <td width="50%">Expected Price</td>
+                <td width="50%"><input class="form-control w-100" type="text" id="sprice" name="sprice"></td>
               </tr>
               <tr>
-                <td>Starting Bid Price</td>
-                <td><input class="form-control w-100" type="text" id="sstartbidprice" name="sstartbidprice"></td>
+                <td width="50%">Starting Bid Price</td>
+                <td width="50%"><input class="form-control w-100" type="text" id="sstartbidprice" name="sstartbidprice"></td>
               </tr>
               <tr>
-                <td>Brief Description</td>
-                <td><textarea class="form-control w-100" type="text" id="sstartbidprice" name="sstartbidprice"></textarea></td>
+                <td width="50%">Brief Description</td>
+                <td width="50%"><textarea class="form-control w-100" type="text" id="sstartbidprice" name="sstartbidprice"></textarea></td>
               </tr>
               <hr>
               <tr>
-                <td>
-                  <label class="form-label" for="customFile">Front View</label>
+                <td width="50%">
+                  <label class="form-label" for="customFile">Front & Rear Image</label>
                 
                 </td>
-              <td>
-                <input type="file" class="form-control" id="uploadproductimage" name="uploadproductimage"/>
+              <td width="50%">
+                <input type="file" class="form-control" id="uploadproductimagefr" name="uploadproductimagefr[]" multiple/>
               </td>
                </tr>
                <tr>
-                <td>
-                  <label class="form-label" for="customFile">Bonnet View</label>
+                <td width="50%">
+                  <label class="form-label" for="customFile">Right & Left Image</label>
                 
                 </td>
-              <td>
-                <input type="file" class="form-control" id="uploadproductimage" name="uploadproductimage"/>
+              <td width="50%">
+                <input type="file" class="form-control" id="uploadproductimagerl" name="uploadproductimagerl[]" multiple/>
               </td>
                </tr>
                <tr>
-                <td>
-                  <label class="form-label" for="customFile">Bonnet View</label>
+                <td width="50%">
+                  <label class="form-label" for="customFile">Front Right & Front Left</label>
                 
                 </td>
-              <td>
-                <input type="file" class="form-control" id="uploadproductimage" name="uploadproductimage"/>
+              <td width="50%">
+                <input type="file" class="form-control" id="uploadproductimagefrrl" name="uploadproductimagefrrl" multiple/>
               </td>
                </tr>
                <tr>
-                <td>
-                  <label class="form-label" for="customFile">Bonnet View</label>
+                <td width="50%">
+                  <label class="form-label" for="customFile">Rear Right & Rear Left Image</label>
                 
                 </td>
-              <td>
-                <input type="file" class="form-control" id="uploadproductimage" name="uploadproductimage"/>
+              <td width="50%">
+                <input type="file" class="form-control" id="uploadproductimagerrrl" name="uploadproductimagerrrl[]" multiple/>
               </td>
                </tr>
                <tr>
-                <td>
-                  <label class="form-label" for="customFile">Bonnet View</label>
+                <td width="50%">
+                  <label class="form-label" for="customFile">Roof Top & Rear View Mirror Image</label>
                 
                 </td>
-              <td>
-                <input type="file" class="form-control" id="uploadproductimage" name="uploadproductimage"/>
+              <td width="50%">
+                <input type="file" class="form-control" id="uploadproductimagertrv" name="uploadproductimagertrv[]" multiple/>
               </td>
                </tr>
                <tr>
-                <td>
-                  <label class="form-label" for="customFile">Bonnet View</label>
+                <td width="50%">
+                  <label class="form-label" for="customFile">Front & Rear Windsheild Image</label>
                 
                 </td>
-              <td>
-                <input type="file" class="form-control" id="uploadproductimage" name="uploadproductimage"/>
+              <td width="50%">
+                <input type="file" class="form-control" id="uploadproductimagefrw" name="uploadproductimagefrw" multiple/>
               </td>
                </tr>
                <tr>
-                <td>
-                  <label class="form-label" for="customFile">Bonnet View</label>
+                <td width="50%">
+                  <label class="form-label" for="customFile">Boot Space & Seat Images</label>
                 
                 </td>
-              <td>
-                <input type="file" class="form-control" id="uploadproductimage" name="uploadproductimage"/>
+              <td width="50%">
+                <input type="file" class="form-control" id="uploadproductimagebssi" name="uploadproductimagebssi[]" multiple/>
               </td>
                </tr>
                <tr>
-                <td>
-                  <label class="form-label" for="customFile">Bonnet View</label>
+                <td width="50%">
+                  <label class="form-label" for="customFile">DashBoard and Odometer Images</label>
                 
                 </td>
-              <td>
-                <input type="file" class="form-control" id="uploadproductimage" name="uploadproductimage"/>
+              <td width="50%">
+                <input type="file" class="form-control" id="uploadproductimagedo" name="uploadproductimagedo[]" multiple/>
+              </td>
+               </tr>
+               <tr>
+                <td width="50%">
+                  <label class="form-label" for="customFile">Multimedia Device and Odometer Images</label>
+                
+                </td>
+              <td width="50%">
+                <input type="file" class="form-control" id="uploadproductimagemdo" name="uploadproductimagemdo[]" multiple/>
+              </td>
+               </tr>
+               <tr>
+                <td width="50%">
+                  <label class="form-label" for="customFile">All Doors Images</label>
+                
+                </td>
+              <td width="50%">
+                <input type="file" class="form-control" id="uploadproductimageadoor" name="uploadproductimageadoor[]" multiple/>
               </td>
                </tr>
                 </tbody>
